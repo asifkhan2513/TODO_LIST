@@ -24,7 +24,8 @@
         <h1>Todo List</h1>
       </header>
       <form>
-        <input type="text" class="todo-input" />
+        <input type="text" class="todo-input" placeholder="task" />
+        <input type="number" class="price-input" placeholder=" price" />
         <button class="todo-button" type="submit">
           <i class="fas fa-plus-square"></i>
         </button>
@@ -39,9 +40,12 @@
       <div class="todo-container">
         <ul class="todo-list"></ul>
       </div>
+      <div class="total-price">
+        ₹<span id="total">0</span>
+      </div>
 
       <div id="owner">
-        Made by Asif khan
+        Made by Mo Asif
         <script>
           new Date().getFullYear() > 2023 &&
             document.write("-" + new Date().getFullYear());
